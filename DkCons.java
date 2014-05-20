@@ -52,7 +52,7 @@ public class DkCons {
       HashMap < String , Integer > charcount = new HashMap < String , Integer > ();
       if ( urllist != null ) {
          for ( String url : urllist ) {
-            charcount.put ( "Char # at " + url + " is " , loadeddata.get ( url ).length() );
+            charcount.put ( url , loadeddata.get ( url ).length() );
          }    
       } return charcount;
    }
